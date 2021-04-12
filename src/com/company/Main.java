@@ -27,4 +27,14 @@ public class Main {
         }
         return result;
     }
+    public static int sum(int... numbers) {
+        if(numbers.length <1) {
+            throw new IllegalArgumentException();
+        }
+        int result = 0;
+        for (int number : numbers) {
+            result += number;
+        }
+        return result;
+    }
 }
